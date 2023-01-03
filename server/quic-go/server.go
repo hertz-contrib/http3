@@ -30,7 +30,7 @@ type handler struct {
 
 func (h *handler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
 	ctx := h.ctxPool.Get().(*app.RequestContext)
-	_ = adaptor.SwapToHertzRequest(request, &ctx.Request)
+	_ = adaptor.CopyToHertzRequest(request, &ctx.Request)
 	h.core.ServeHTTP(context.Background(), ctx)
 	ctx.Response.Header.VisitAll(func(key, value []byte) {
 		writer.Header().Add(string(key), string(value)) // TODO: B2S

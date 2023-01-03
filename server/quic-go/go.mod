@@ -2,9 +2,8 @@ module github.com/hertz-contrib/http3/server/quic-go
 
 go 1.18
 
-
 require (
-	github.com/cloudwego/hertz v0.0.0-00010101000000-000000000000
+	github.com/cloudwego/hertz v0.4.3-0.20230103082611-81332e6a707d
 	github.com/lucas-clemente/quic-go v0.31.0
 )
 
@@ -40,5 +39,3 @@ require (
 	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 )
-
-replace github.com/cloudwego/hertz => ../../../../welkeyever/hertz

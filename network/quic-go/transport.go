@@ -21,8 +21,9 @@ type transport struct {
 	EnableDatagrams bool
 	Addr            string
 
-	listener io.Closer
-	handler  network.OnData
+	tcpTransporter network.Transporter
+	listener       io.Closer
+	handler        network.OnData
 }
 
 func (t *transport) Close() error {

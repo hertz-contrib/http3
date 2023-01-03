@@ -12,6 +12,15 @@ type conn struct {
 	quicgo.EarlyConnection
 }
 
+type versioner interface {
+	GetVersion() quicgo.VersionNumber
+}
+
+func (c *conn) GetVersion() uint32 {
+	cc := c.EarlyConnection.(versioner)
+	return uint32(cc.GetVersion())
+}
+
 func (c *conn) GetRawConnection() interface{} {
 	return c.rawConn
 }
