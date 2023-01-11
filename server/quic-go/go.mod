@@ -3,7 +3,7 @@ module github.com/hertz-contrib/http3/server/quic-go
 go 1.18
 
 require (
-	github.com/cloudwego/hertz v0.4.3-0.20230103082611-81332e6a707d
+	github.com/cloudwego/hertz v0.5.0
 	github.com/lucas-clemente/quic-go v0.31.0
 )
 
