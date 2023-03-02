@@ -43,7 +43,4 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 )
 
-//replace (
-//	github.com/hertz-contrib/http3/network/quic-go => ./network/quic-go
-//	github.com/hertz-contrib/http3/server/quic-go => ./server/quic-go
-//)
+
