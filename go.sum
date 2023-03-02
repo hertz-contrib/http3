@@ -37,6 +37,10 @@ github.com/henrylee2cn/ameda v1.4.10 h1:JdvI2Ekq7tapdPsuhrc4CaFiqw6QXFvZIULWJgQy
 github.com/henrylee2cn/ameda v1.4.10/go.mod h1:liZulR8DgHxdK+MEwvZIylGnmcjzQ6N6f2PlWe7nEO4=
 github.com/henrylee2cn/goutil v0.0.0-20210127050712-89660552f6f8 h1:yE9ULgp02BhYIrO6sdV/FPe0xQM6fNHkVQW2IAymfM0=
 github.com/henrylee2cn/goutil v0.0.0-20210127050712-89660552f6f8/go.mod h1:Nhe/DM3671a5udlv2AdV2ni/MZzgfv2qrPL5nIi3EGQ=
+github.com/hertz-contrib/http3/network/quic-go v0.1.0 h1:YjD+Et3FPZF0Yd8DjPItHsNQOAYWoYg6lUTnfRbklMY=
+github.com/hertz-contrib/http3/network/quic-go v0.1.0/go.mod h1:IEU8KTPV/TM+OOK2qjMRuPplGwFyJdLcmnHoo+C5P3o=
+github.com/hertz-contrib/http3/server/quic-go v0.1.0 h1:b2q68Jdemr2m6uyoXz/Ke6fyvkR/inDi1vLh8S8pIMU=
+github.com/hertz-contrib/http3/server/quic-go v0.1.0/go.mod h1:gt7dPz4rBb88gp28mXXubEiYqkdzV7SivVURGME0wQ0=
 github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/klauspost/cpuid/v2 v2.0.9 h1:lgaqFMSdTdQYdZ04uHyN2d/eKdOMyi2YLSvlQIBFYa4=
 github.com/klauspost/cpuid/v2 v2.0.9/go.mod h1:FInQzS24/EEf25PyTYn52gqo7WaD8xa0213Md/qVLRg=
