@@ -2,7 +2,11 @@ module github.com/hertz-contrib/http3
 
 go 1.18
 
-require github.com/cloudwego/hertz v0.4.3-0.20230103082611-81332e6a707d
+require (
+	github.com/cloudwego/hertz v0.4.3-0.20230103082611-81332e6a707d
+	github.com/hertz-contrib/http3/network/quic-go v0.0.0-20230103113453-4a1eb302703f
+	github.com/hertz-contrib/http3/server/quic-go v0.0.0-20230103121033-f658291dd3f8
+)
 
 require (
 	github.com/bytedance/go-tagexpr/v2 v2.9.2 // indirect
@@ -17,8 +21,6 @@ require (
 	github.com/google/pprof v0.0.0-20210407192527-94a9f03dee38 // indirect
 	github.com/henrylee2cn/ameda v1.4.10 // indirect
 	github.com/henrylee2cn/goutil v0.0.0-20210127050712-89660552f6f8 // indirect
-	github.com/hertz-contrib/http3/network/quic-go v0.0.0-20230103113453-4a1eb302703f // indirect
-	github.com/hertz-contrib/http3/server/quic-go v0.0.0-20230103121033-f658291dd3f8 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
 	github.com/lucas-clemente/quic-go v0.31.0 // indirect
 	github.com/marten-seemann/qpack v0.3.0 // indirect
