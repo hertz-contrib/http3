@@ -1,6 +1,6 @@
 module github.com/hertz-contrib/http3
 
-go 1.18
+go 1.19
 
 require (
 	github.com/cloudwego/hertz v0.6.0
@@ -42,5 +42,3 @@ require (
 	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 )
-
-
