@@ -18,7 +18,7 @@ package quic
 
 import (
 	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/lucas-clemente/quic-go"
+	"github.com/quic-go/quic-go"
 )
 
 var _ network.Stream = &stream{}

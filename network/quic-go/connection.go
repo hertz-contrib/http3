@@ -20,7 +20,7 @@ import (
 	"context"
 
 	"github.com/cloudwego/hertz/pkg/network"
-	quicgo "github.com/lucas-clemente/quic-go"
+	quicgo "github.com/quic-go/quic-go"
 )
 
 type conn struct {
