@@ -2,7 +2,7 @@
 
 This repo is the collection of Hertz HTTP3 implementations. Includes: Network layer & Protocol layer.
 Detailed information can be found in
-the [Hertz-HTTP3](https://www.cloudwego.io/zh/docs/hertz/tutorials/framework-exten/protocol/#protocolstreamserver).
+the [Hertz-HTTP3](https://www.cloudwego.io/zh/docs/hertz/tutorials/basic-feature/protocol/http3/).
 
 ## Network Layer
 
