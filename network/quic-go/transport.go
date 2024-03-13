@@ -26,7 +26,6 @@ import (
 	errs "github.com/cloudwego/hertz/pkg/common/errors"
 	"github.com/cloudwego/hertz/pkg/common/hlog"
 	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/hertz-contrib/http3/network/quic-go/testdata"
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
 )
@@ -52,13 +51,13 @@ func (t *transport) Shutdown(ctx context.Context) error {
 
 func (t *transport) ListenAndServe(onData network.OnData) error {
 	t.handler = onData
-	return t.ListenAndServeTLS(testdata.GetCertificatePaths())
+	return t.ListenAndServeTLS()
 }
 
 // ListenAndServeTLS listens on the UDP address s.Addr and calls s.Handler to handle HTTP/3 requests on incoming connections.
 //
 // If s.Addr is blank, ":https" is used.
-func (t *transport) ListenAndServeTLS(certFile, keyFile string) error {
+func (t *transport) ListenAndServeTLS() error {
 	return t.serveConn(t.TLSConfig, nil)
 }
 
