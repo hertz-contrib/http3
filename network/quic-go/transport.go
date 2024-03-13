@@ -59,18 +59,7 @@ func (t *transport) ListenAndServe(onData network.OnData) error {
 //
 // If s.Addr is blank, ":https" is used.
 func (t *transport) ListenAndServeTLS(certFile, keyFile string) error {
-	var err error
-	certs := make([]tls.Certificate, 1)
-	certs[0], err = tls.LoadX509KeyPair(certFile, keyFile)
-	if err != nil {
-		return err
-	}
-	// We currently only use the cert-related stuff from tls.Config,
-	// so we don't need to make a full copy.
-	config := &tls.Config{
-		Certificates: certs,
-	}
-	return t.serveConn(config, nil)
+	return t.serveConn(t.TLSConfig, nil)
 }
 
 func (t *transport) serveConn(tlsConf *tls.Config, conn net.PacketConn) error {
