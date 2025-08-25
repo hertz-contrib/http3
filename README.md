@@ -1,8 +1,15 @@
-# Hertz-HTTP3
+# Project Archival Notice
+This project is **no longer recommended for use** and has been officially **archived**. The decision to archive is based on the following key considerations:
+- The project currently lacks clear end-user adoption and validated real-world implementation cases.
+- It does not meet the standard requirements for enterprise-level frameworks, which may lead to compatibility or maintenance issues in production environments.
+
+We appreciate the interest and contributions this project has received. For enterprise-level use cases, we recommend exploring alternative solutions that align with industry best practices and have proven operational validity.
+
+
+## Hertz-HTTP3
 
 This repo is the collection of Hertz HTTP3 implementations. Includes: Network layer & Protocol layer.
-Detailed information can be found in
-the [Hertz-HTTP3](https://www.cloudwego.io/zh/docs/hertz/tutorials/basic-feature/protocol/http3/).
+
 
 ## Network Layer
 
